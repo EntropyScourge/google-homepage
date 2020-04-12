@@ -1,0 +1,41 @@
+main {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#dictionary {
+    width: 400px;
+}
+
+#results-navbar {
+    height: 100px;
+    padding-left: 200px;
+    border-bottom: solid;
+    padding-bottom: 20px;
+}
+
+#results-glass {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 520px;
+    z-index: 1;
+    transform: scale(0.83);
+}
+
+#search-categories {
+    margin-bottom: 30px;
+}
+
+.inline-results-box {
+    width: 600px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#people {
+    color: red:
+}
+
