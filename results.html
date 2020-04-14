@@ -8,7 +8,8 @@
     <body>
         <header>
             <div id="results-navbar">
-                <div class="search-box">
+                <img id="results-logo" src="static/results-logo.png" width="92" height="33">
+                <div class="search-box" id="results-search-box">
                     <svg id="results-glass">
                         <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                     </svg>
@@ -17,14 +18,15 @@
                     </label>
                 </div>
                 <div id="search-categories">
-                    <a href="">All</a>
-                    <a href="">Videos</a>
-                    <a href="">Images</a>
-                    <a href="">News</a>
-                    <a href="">Books</a>
-                    <a href="">More</a>
-                    <a href="">Settings</a>
-                    <a href="">Tools</a>
+                    <a class="category-link" href="">All</a>
+                    <a class="category-link" href="">Videos</a>
+                    <a class="category-link" href="">Images</a>
+                    <a class="category-link" href="">News</a>
+                    <a class="category-link" href="">Books</a>
+                    <a class="category-link" href="">More</a>
+                    <div id="search-cats-spacer"></div>
+                    <a class="category-link" href="">Settings</a>
+                    <a class="category-link" href="">Tools</a>
                 </div>
             </div>
         </header>
@@ -32,22 +34,27 @@
             About 47,700,000 results (0.54 seconds)
             <div class="inline-results-box" id="dictionary">
                 Dictionary
-                <div id="dictionary-search">
-                    <input type="text">
+                <div>
+                    <input id="dictionary-searchbox" type="text">
+                    <button id="dictionary-search">
+                        <svg id="dict-glass">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                    </button>
                 </div>
                 entropy
                 <br>
                 /ˈɛntrəpi/
-                See definitions in:
-                <button>All</button>
-                <button>Physics</button>
-                <button>Chemistry</button>
-                <button>Telecommunications</button>
-                <button>Mathematics</button>
-                <em>noun</em>
-                <ol>
-                    <div>PHYSICS</div>
+                <p>See definitions in:</p>
+                <button class="category-button">All</button>
+                <button class="category-button">Physics</button>
+                <button class="category-button">Chemistry</button>
+                <button class="category-button">Telecommunications</button>
+                <button class="category-button">Mathematics</button>
+                <p><em>noun</em></p>
+                <ol id="definitions">
                     <li>
+                        <div id="defs-header">PHYSICS</div>
                         a thermodynamic quantity representing the unavailability of a system's thermal energy for conversion into mechanical work, often interpreted as the degree of disorder or randomness in the system.
                         <br>
                         "the second law of thermodynamics says that entropy always increases with time"
@@ -58,17 +65,103 @@
                         "a marketplace where entropy reigns supreme"
                     </li>
                 </ol>
-                <div id="extend-button">
-                    <button>Translations, word origin and more definitions</button>
-                </div>
+                <button id="extend-button">Translations, word origin and more definitions</button>
             </div>
             From Oxford
             <div class="inline-results-box" id="people">
                 People also ask
                 <div class="question">What is a simple definition of entropy?</div>
                 <div class="question">What is entropy with example?</div>
-                What is the opposite of entropy?
+                <div class="question">What is the opposite of entropy?</div>
+                <div class="question">What is the formula for entropy?</div>
+            </div>
+            <div class="results-entry">
+                <h2>en.wikipedia.org › wiki › Entropy</h2>
+                <a class="result-link" href="">Entropy - Wikipedia</a>
+                <br>In statistical mechanics, <strong>entropy</strong> is a measure of the number of ways a system can be arranged, often taken to be a measure of "disorder" (the higher the entropy, the higher the disorder).
+                <div class="related-links">
+                <a href="">Entropy (information theory)</a>·
+                <a href="">‎Introduction to entropy</a>·
+                <a href="">‎Entropy in thermodynamics ...</a>
+                </div>
+            </div>
+            <div class="results-entry">
+                <h2>www.merriam-webster.com › dictionary › entropy</h2>
+                <a class="result-link" href="">Entropy | Definition of Entropy by Merriam-Webster</a>
+                <br>The closed system we usually think of when speaking of <strong>entropy</strong> (especially if we're not physicists) is the entire universe. But <strong>entropy</strong> applies to closed systems of ...                <div class="related-links">
+                </div>
+            </div>
+            <div class="results-entry">
+                <h2>www.britannica.com › science › entropy-physics</h2>
+                <a class="result-link" href="">entropy | Definition and Equation | Britannica</a>
+                <br><strong>Entropy</strong>, the measure of a system's thermal energy per unit temperature that is unavailable for doing useful work. Because work is obtained from ordered molecular motion, the amount of <strong>entropy</strong> is also a measure of the molecular disorder, or randomness, of a system.
+            </div>
+            <div class="results-entry">
+                <h2>www.scholarpedia.org › article › Entropy</h2>
+                <a class="result-link" href="">Entropy - Scholarpedia</a>
+                <br><div class="date">16 Nov 2007</div> - In classical physics, the <strong>entropy</strong> of a physical system is proportional to the quantity of energy no longer available to do physical work. <strong>Entropy</strong> is ...
+            </div>
+            <div class="results-entry">
+                <h2>jamesclear.com › entropy</h2>
+                <a class="result-link" href="">Entropy: Why Life Always Seems to Get More Complicated</a>
+                <br><strong>Entropy</strong> is one of the fundamental forces of our universe. And the Second Law of Thermodynamics states that it will never decrease. Read this to learn more.
+            </div>
+            <div class="results-entry">
+                <h2>www.mdpi.com › journal › entropy</h2>
+                <a class="result-link" href="">Entropy | An Open Access Journal from MDPI</a>
+                <br><strong>Entropy</strong>. Article Type. All Article Types, Article, Review, Communication, Editorial, Addendum, Book Review, Case Report, Comment, Commentary, Concept ...
+            </div>
+            <div class="results-entry">
+                <h2>www.dictionary.com › browse › entropy</h2>
+                <a class="result-link" href="">Entropy | Definition of Entropy at Dictionary.com</a>
+                <br>For a closed thermodynamic system, a quantitative measure of the amount of thermal energy not available to do work. A measure of the disorder or randomness in ...
+            </div>
+            <div class="results-entry">
+                <h2>www.sciencedirect.com › topics › computer-science › entropy</h2>
+                <a class="result-link" href="">Entropy - an overview | ScienceDirect Topics</a>
+                <br><strong>Entropy</strong>, in cyber security, is a measure of the randomness or diversity of a data-generating function. Data with full <strong>entropy</strong> is completely random and no ...
+            </div>
+            <h3>Searches related to entropy</h3>
+            <a class="related-search" href="">entropy in thermodynamics</a>
+            <a class="related-search" href="">entropy chemistry</a>
+            <a class="related-search" href="">entropy formula</a>    
+            <a class="related-search" href="">entropy physics</a>    
+            <a class="related-search" href="">entropy example</a>    
+            <a class="related-search" href="">entropy definition simple</a>    
+            <a class="related-search" href="">what is entropy in biology</a>    
+            <a class="related-search" href="">entropy statistics</a>
+            <div id="page-selector">
+                <img src="static/Screenshot.png" id="logo-pages">
+                <div id="page-numbers">
+                    <a id="selected-page" href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                </div>
             </div>
         </main>
+        <footer>
+            <div id="results-bottom-bar">
+                <div id="bottom-bar-top">
+                    <div class="bottom-link">United Kingdom</div>
+                </div>
+                <div id="bottom-bar-bottom">
+                    <div id="bottom-bar-bottom-left">
+                        <a class="bottom-link" href="">Help</a>
+                        <a class="bottom-link" href="">Send feedback</a>
+                        <a class="bottom-link" href="">Privacy</a>
+                        <a class="bottom-link" href="">Terms</a>
+                    </div>
+                    <div id="bottom-bar-bottom-right">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
